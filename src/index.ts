@@ -1,0 +1,1 @@
+export { isx } from "./is";
