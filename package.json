@@ -1,0 +1,37 @@
+{
+  "name": "isx",
+  "version": "0.1.0",
+  "description": "Tiny, intent-based string validation for JavaScript & TypeScript",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "validation",
+    "regex",
+    "typescript",
+    "frontend",
+    "backend"
+  ],
+  "author": "Hiren Tumbadiya",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  }
+}
