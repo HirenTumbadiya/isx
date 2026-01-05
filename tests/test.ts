@@ -1,5 +1,9 @@
-import { isx } from "../dist/index.js";
+import { isx, assert } from "../dist/index.js";
 
-console.log(isx.email("test@gmail.com"));
-console.log(isx.email("bad@@gmail")); 
-console.log(isx.email(123)); 
+try {
+  assert.email("bad@@mail");
+} catch (e) {
+  console.error(e instanceof Error ? e.message : e);
+}
+
+assert.email("test@gmail.com");
