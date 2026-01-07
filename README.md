@@ -2,9 +2,9 @@
 
 Tiny, **intent-based** string validation for JavaScript and TypeScript. Zero dependencies, extremely lightweight, and tree-shakeable.
 
-<!-- [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![NPM Version](https://img.shields.io/npm/v/isx.svg)](https://www.npmjs.com/package/isx)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/isx)](https://bundlephobia.com/package/isx) -->
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![NPM Version](https://img.shields.io/npm/v/isx-intent.svg)](https://www.npmjs.com/package/isx-intent)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/isx-intent)](https://bundlephobia.com/package/isx-intent)
 
 ## 🚀 Overview
 
@@ -17,11 +17,11 @@ Tiny, **intent-based** string validation for JavaScript and TypeScript. Zero dep
 ## 📦 Installation
 
 ```bash
-npm install isx
+npm install isx-intent
 # or
-yarn add isx
+yarn add isx-intent
 # or
-pnpm add isx
+pnpm add isx-intent
 ```
 
 ## 🛠️ Usage
@@ -30,7 +30,8 @@ pnpm add isx
 Returns `true` if valid, `false` otherwise. Acts as a Type Guard.
 
 ```typescript
-import { isx } from 'isx';
+```typescript
+import { isx } from 'isx-intent';
 
 if (isx.email('hello@world.com')) {
   // TypeScript knows value is a valid email string here
@@ -45,7 +46,8 @@ isx.uuid('f47ac10b...');     // true
 Throws a `ValidationError` if the check fails. Useful for flow control and early returns.
 
 ```typescript
-import { assert } from 'isx';
+```typescript
+import { assert } from 'isx-intent';
 
 try {
   assert.email(userInput);
@@ -93,7 +95,8 @@ try {
 The `assert` API throws a `ValidationError` which extends the native `Error` class and includes a `code` property for programmatic handling.
 
 ```typescript
-import { ValidationError } from 'isx';
+```typescript
+import { ValidationError } from 'isx-intent';
 
 // ... inside a catch block
 if (error instanceof ValidationError) {

@@ -1,7 +1,15 @@
 {
-  "name": "isx",
+  "name": "isx-intent",
   "version": "0.1.0",
   "description": "Tiny, intent-based string validation for JavaScript & TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HirenTumbadiya/isx"
+  },
+  "bugs": {
+    "url": "https://github.com/HirenTumbadiya/isx/issues"
+  },
+  "homepage": "https://github.com/HirenTumbadiya/isx#readme",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
