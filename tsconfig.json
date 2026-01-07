@@ -1,15 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
+    "lib": ["ES2022"],
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": false,
     "outDir": "dist",
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "noImplicitAny": true
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths": {
+      "@isx/*": ["src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "tests"],
+  "exclude": ["node_modules", "dist"]
 }
