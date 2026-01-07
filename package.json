@@ -30,15 +30,28 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
+    "string-validation",
     "validation",
-    "regex",
+    "intent",
+    "type-safe",
     "typescript",
-    "frontend",
-    "backend"
+    "javascript",
+    "schema",
+    "assert",
+    "guard",
+    "lightweight"
   ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Hiren Tumbadiya",
   "devDependencies": {
     "tsup": "^8.5.1",
