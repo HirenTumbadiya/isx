@@ -5,6 +5,7 @@ Tiny, **intent-based** string validation for JavaScript and TypeScript. Zero dep
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![NPM Version](https://img.shields.io/npm/v/isx-intent.svg)](https://www.npmjs.com/package/isx-intent)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/isx-intent)](https://bundlephobia.com/package/isx-intent)
+![npm](https://img.shields.io/npm/dw/isx-intent)
 
 ## 🚀 Overview
 
